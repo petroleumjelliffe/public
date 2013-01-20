@@ -1,0 +1,28 @@
+# standard jekyll configuration
+
+permalink: date
+pygments: true
+exclude: ['Rakefile', 'README.md', 'config.rb']
+markdown: rdiscount
+
+# configuration required for some pages
+
+domain: petroleumjelliffe.github.com
+title: 100% Pure Petroleum Jelliffe on GitHub
+author: Pete 
+email: pete.jelliffe@gmail.com
+twitter: petroleumj
+
+# configuration for ehancements, uncomment to enable
+
+# feedburner:
+#   id: feedburnerid
+
+# google_analytics:
+#   account: UA-XXXXX-X
+
+# github:
+#   username: ghusername
+
+# disqus:
+#   id: disqusid
