@@ -1,20 +1,24 @@
 ---
-layout: post
-title: Hello World
+layout: default
+description: A description about my blog homepage
 ---
 
-<html>
+<div id="posts">
+  <h2>Blog Posts</h2>
+  <ul>
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> - <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
 
-<head>
-<title>{{ page.title }}</title>
-
-</head>
-
-
-<body>
-<h1>{{ page.title }}</h1>
-
-
-
-</body>
-</html>
+<div id="pages">
+  <h2>Pages</h2>
+  <ul>
+    {% for page in site.html_pages %}
+      {% if page.title %}
+        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
