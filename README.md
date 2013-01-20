@@ -1,4 +1,14 @@
-public
+{{ date }}
+
+currently reading
 ======
 
-My public self.
+A Winter's Tale
+
+
+currently thinking about
+======
+
+Food
+
+
